@@ -20,13 +20,12 @@ const columns = [
     id: 'portionKind',
     label: 'Tipo de Medida',
     minWidth: 170,
-    align: 'right',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
     id: 'remove',
     label: 'Remover',
-    minWidth: 170,
+    minWidth: 60,
     align: 'right', 
     format: (value) => value.toLocaleString('en-US'),
   },
@@ -103,7 +102,8 @@ export default function MealsList(props) {
                       <TableCell align='center'>
                       <FormControl fullWidth>       
                         <Select
-                          fullWidth    
+                          fullWidth
+                          align="left"
                           labelId={`meal-select-label-${row.mealId}`}
                           id={`meal-select-${row.mealId}`}
                           value={row.foodId}
@@ -143,6 +143,7 @@ export default function MealsList(props) {
                           labelId={`portiontype-select-label-${row.mealId}`}
                           id={`portiontype-select-${row.mealId}`}
                           value={row.portionTypeId}
+                          align="left"
                           onChange={(ev) => setParam('portionTypeId', ev.target.value, row.mealId)}
                           >
                           <MenuItem value={0}></MenuItem>
