@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
     [theme.breakpoints.up(600 + theme.spacing(2))]: {
-      width: 700,
+      width: 900,
       marginLeft: 'auto',
       marginRight: 'auto',
     },
@@ -74,7 +74,7 @@ export default function MainPage() {
   const [gender, setGender] = React.useState(0);
   const [height, setHeight] = React.useState(0);
   const [weight, setWeight] = React.useState(0);
-  const [mealsList, setMealsList] = React.useState(mealsListMock);
+  const [mealsList, setMealsList] = React.useState([]);
 
   const getStepContent = (step) => {
     switch (step) {
