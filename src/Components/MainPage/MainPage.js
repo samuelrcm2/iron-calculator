@@ -52,13 +52,13 @@ const useStyles = makeStyles((theme) => ({
 
 const steps = ['Dados Iniciais', 'Alimentação', 'Relatório'];
 
-const mealsListMock = [
-  {mealId: 1, foodName: 'Sementes de abóbora', foodId: 1, portionValue: 2, portionTypeId: 5},
-  {mealId: 2, foodName: 'Pistache', foodId: 2, portionValue: 1, portionTypeId: 4},
-  {mealId: 3, foodName: 'Cacau em pó', foodId: 3, portionValue: 7, portionTypeId: 3},
-  {mealId: 4, foodName: 'Tofu', foodId: 5, portionValue: 9, portionTypeId: 2},
-  {mealId: 5, foodName: 'Feijão preto cozido', foodId: 10, portionValue: 4, portionTypeId: 1}
-].sort((a, b) => a.mealId - b.mealId);
+// const mealsListMock = [
+//   {mealId: 1, foodName: 'Sementes de abóbora', foodId: 1, portionValue: 2, portionTypeId: 5},
+//   {mealId: 2, foodName: 'Pistache', foodId: 2, portionValue: 1, portionTypeId: 4},
+//   {mealId: 3, foodName: 'Cacau em pó', foodId: 3, portionValue: 7, portionTypeId: 3},
+//   {mealId: 4, foodName: 'Tofu', foodId: 5, portionValue: 9, portionTypeId: 2},
+//   {mealId: 5, foodName: 'Feijão preto cozido', foodId: 10, portionValue: 4, portionTypeId: 1}
+// ].sort((a, b) => a.mealId - b.mealId);
 
 const isNumeric = (number) => {
   if (!isNaN(number)) return true;
